@@ -5,13 +5,13 @@ body {
     display: grid;
     grid-template: 
     "nav main";
-    grid-template-columns: 30vw 1fr;
+    grid-template-columns: 25vw 1fr;
     grid-gap: .1vw;
 }
 header {
     border: 2px solid black;
     grid-area: nav;
-    height: 100vh;
+    height: 101vh;
     display: grid;
     grid-template:
     "logo"
@@ -83,4 +83,15 @@ main {
     border: 2px solid black;
     grid-area: main;
     background-color: #D2D79F;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+img {
+    height: 100vh;
 }
