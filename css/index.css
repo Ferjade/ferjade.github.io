@@ -8,7 +8,7 @@ body {
     grid-template-columns: 25vw 1fr;
     grid-gap: .1vw;
 }
-header {
+.header {
     border: 2px solid black;
     grid-area: nav;
     height: 101vh;
@@ -95,3 +95,6 @@ a:visited {
 img {
     height: 100vh;
 }
+/* .logo {
+    background-color: #D2D79F;
+} */
