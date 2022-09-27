@@ -43,7 +43,9 @@ nav > div {
 }
 nav > div:hover {
     background-color: #483838;
-    color: white;
+}
+nav > div > a:hover {
+    color: white!important;
 }
 footer {
     grid-area: footer;
