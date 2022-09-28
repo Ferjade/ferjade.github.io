@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Featured Stories</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/stories.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Stories</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/stories.css">
 </head>
+
 <body>
-    <header>
-        <div class="col-md-12" style="height: 10vh; width: 99vw; background-color: #483838;">
-            <div class="row">
-                <div class="col-2" style="background: #90B77D;">
-                    <a href="index.html"><img src="media/cover_photo_1.png" alt="logo" style="height: 10vh; width: 100%;"></a>
-                </div>
-                <div class="col-md-1" style="background: #90B77D;"></div>
-                <div class="col-md-9 pt-2 pe-4 header_navigation" style="height: 10vh;">
-                    <nav class="navbar navbar-expand-xl">
-                    <div class="container-fluid">
-                      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="get_started.html">Get Started</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="donate.html">Donate</a>
-                          </li>
-                          <!-- <li class="nav-item dropdown">
+  <header>
+    <div class="col-md-12" style="height: 10vh; width: 99vw; background-color: #483838;">
+      <div class="row">
+        <div class="col-2" style="background: #90B77D;">
+          <a href="index.html"><img src="media/cover_photo_1.png" alt="logo" style="height: 10vh; width: 100%;"></a>
+        </div>
+        <div class="col-md-1" style="background: #90B77D;"></div>
+        <div class="col-md-9 pt-2 pe-4 header_navigation" style="height: 10vh;">
+          <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="get_started.html">Get Started</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="donate.html">Donate</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Dropdown
                             </a>
@@ -44,35 +50,226 @@
                               <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                           </li> -->
-                          <li class="nav-item">
-                            <a class="nav-link" href="volunteer.html">Volunteer</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="orgs.html">Organizations</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" href="stories.html">Stories</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="subscribe.html">Subscribe</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
-                          </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                      </div>
-                    </div>
-                  </nav>
-                </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="volunteer.html">Volunteer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="orgs.html">Organizations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="stories.html">Stories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="subscribe.html">Subscribe</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
+          </nav>
         </div>
-    </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/story1.jpg" alt="image1" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Unicef Philippines</h2>
+              <p class="description">UNICEF concerned for children in the Philippines as Super Typhoon Noru/Karding
+                strikes</p>
+              <p class="description"><strong>MANILA, 25 September 2022</strong> –Super Typhoon Noru (local name Karding)
+                is expected to
+                make landfall today in Luzon, including the capital Metro Manila. Noru is the 11th tropical cyclone to
+                hit the Philippines in 2022 and the most powerful typhoon to hit the island of Luzon this year,
+                developing into a super typhoon after a period of rapid intensification.</p>
+              <button class="button"><a
+                  href="https://www.unicef.org/philippines/press-releases/unicef-concerned-children-philippines-super-typhoon-norukarding-strikes"
+                  target="_blank" class="stretched-link">View More</a></button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/story2.jpg" alt="image1" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">UNHCR Philippines</h2>
+              <p class="description">Atom Araullo underscores need to work with internally displaced communities in
+                building long-term solutions</p>
+              <p class="description">A far-flung mountain barangay affected by protracted conflict, a calamity-prone
+                lakeside village, and an island barangay recovering from Super Typhoon Rai (Odette) were among the
+                communities visited by UNHCR Goodwill Ambassador Atom Araullo during a field mission to Caraga Region,
+                Eastern Mindanao in August.</p>
+              <button class="button"><a
+                  href="https://www.unhcr.org/ph/27687-atom-araullo-underscores-need-to-work-with-idps-in-building-long-term-solutions.html"
+                  target="_blank" class="stretched-link">View More</a></button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/story3.jpg" alt="image3" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Haribon Foundation</h2>
+              <p class="description">THE LARGEST EAGLE IN THE COUNTRY IS A QUEEN</p>
+              <p class="description">Adult female Philippine Eagles are typically larger than adult males. Since
+                Philippine Eagles are the largest eagles in the Philippines, and some of the largest in the world, this
+                means it is actually the female that holds the crown in terms of size. A fact not known to many, even
+                among the eagle’s human neighbors in the protected area where KALIPI is working in. </p>
+              <button class="button"><a href="https://haribon.org.ph/the-largest-eagle-in-the-country-is-a-queen/"
+                  target="_blank" class="stretched-link">View More</a></button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/story4.jpg" alt="image4" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Pawssion Project</h2>
+              <p class="description">50 dogs on death row. To be executed by gunshot. What would you do?</p>
+              <p class="description">One brave woman refused to just stand by, and that is how Pawssion Project was
+                born. Founded in October 2018 by Malou Perez, Pawssion Project Foundation Inc. is a non-profit
+                organization dedicated to the rescue, rehabilitation and rehoming of dogs in distress.</p>
+              <button class="button"><a href="https://pawssionproject.org.ph/our-story/" target="_blank"
+                  class="stretched-link">View More</a></button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/story5.jpg" alt="image5" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">World Vision Philippines</h2>
+              <p class="description">32 new Child Sponsors joined this month’s Donor Cafe</p>
+              <p class="description">A message of thanks was shared by Paul Assie, a Former Sponsored Child (FSC). He
+                shared that because of the help and support he received from World Vision, he was inspired, along with
+                other FSCs to put together a youth-serving organization that aims to help more children in their
+                community.</p>
+              <button class="button"><a
+                  href="https://www.worldvision.org.ph/news/32-new-child-sponsors-joined-this-months-donor-cafe/"
+                  target="_blank" class="stretched-link">View More</a></button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/story6.jpg" alt="image6" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Unicef Philippines</h2>
+              <p class="description">Learning continuity amid and after emergencies</p>
+              <p class="description">For Erlinda Alberca, a child development worker who oversees the Barangay Child
+                Development Center (CDC) of Hanginan, Maasin, Southern Leyte, picking up the pieces after Typhoon Odette
+                (Rai) was really difficult because their barangay’s facility for early learners was left in shambles.
+              </p>
+              <button class="button"><a
+                  href="https://www.unicef.org/philippines/stories/learning-continuity-amid-and-after-emergencies"
+                  target="_blank" class="stretched-link">View More</a></button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/story7.jpg" alt="image7" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Animal Kingdom Foundation</h2>
+              <p class="description">Ending the Dog Meat Trade</p>
+              <p class="description"><strong>AKF’s life mission:</strong> bringing dog meat traders to justice.
+                In recent years, there have been many sprouting organizations that have been joining in the fight
+                against animal cruelty, neglect, and abuse.</p>
+              <button class="button"><a href="https://akf.org.ph/blog/ending-the-dog-meat-trade/" target="_blank"
+                  class="stretched-link">View More</a></button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/story8.jpg" alt="image8" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Love Yourself</h2>
+              <p class="description">PIA WURTZBACH, LOVEYOURSELF REOPENS UNI</p>
+              <p class="description">Graced by its long-time ambassador — Miss Universe 2015 Pia Wurtzbach, the
+                reopening of the new LoveYourself Uni on September 21 (Wednesday) was sponsored by Pilipinas Shell
+                Foundation Inc.- PROTECTS Project under the Global Fund, and the Meeting Targets and Maintaining
+                Epidemic Control (EpiC) project through the generosity of the American people through PEPFAR and USAID.
+              </p>
+              <button class="button"><a href="https://loveyourself.ph/pia-wurtzbach-loveyourself-reopens-uni/"
+                  target="_blank" class="stretched-link">View More</a></button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/story9.jpg" alt="image9" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Mental Health PH</h2>
+              <p class="description">Mythbusters: Myths & Facts About Suicide</p>
+              <p class="description">These are some of the commonly held misconceptions about suicide or self-harm 🎗<br/>
+                <br/>#WSPD <br/>#WSPD2020 <br/>#MayKaramayka <br/>#ThereIsHelp</p>
+              <button class="button"><a href="https://akf.org.ph/blog/ending-the-dog-meat-trade/" target="_blank"
+                  class="stretched-link">View More</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 </body>
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+<!-- Javascript -->
+<script src="js/script.js"></script>
+
 </html>

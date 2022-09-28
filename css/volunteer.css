@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+body {
+    background-color: #483838;
+}
 li > a:hover {
     background-color: #483838;
     color: white!important;

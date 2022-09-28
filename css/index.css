@@ -97,6 +97,13 @@ a:visited {
 img {
     height: 100vh;
 }
-/* .logo {
-    background-color: #D2D79F;
-} */
+.carousel-caption {
+    background-color: #483838;
+    border-radius: 25px;
+    opacity: 0.9;
+}
+.button {
+    background-color: #42855B;
+    padding: 10px 25px;
+    border-radius: 25px;
+}

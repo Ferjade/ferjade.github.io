@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Featured Organizations</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/orgs.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Organizations</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/orgs.css">
 </head>
+
 <body>
-    <header>
-        <div class="col-md-12" style="height: 10vh; width: 99vw; background-color: #483838;">
-            <div class="row">
-                <div class="col-2" style="background: #90B77D;">
-                    <a href="index.html"><img src="media/cover_photo_1.png" alt="logo" style="height: 10vh; width: 100%;"></a>
-                </div>
-                <div class="col-md-1" style="background: #90B77D;"></div>
-                <div class="col-md-9 pt-2 pe-4 header_navigation" style="height: 10vh;">
-                    <nav class="navbar navbar-expand-xl">
-                    <div class="container-fluid">
-                      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="get_started.html">Get Started</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="donate.html">Donate</a>
-                          </li>
-                          <!-- <li class="nav-item dropdown">
+  <header>
+    <div class="col-md-12" style="height: 10vh; width: 99vw; background-color: #483838;">
+      <div class="row">
+        <div class="col-2" style="background: #90B77D;">
+          <a href="index.html"><img src="media/cover_photo_1.png" alt="logo" style="height: 10vh; width: 100%;"></a>
+        </div>
+        <div class="col-md-1" style="background: #90B77D;"></div>
+        <div class="col-md-9 pt-2 pe-4 header_navigation" style="height: 10vh;">
+          <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="get_started.html">Get Started</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="donate.html">Donate</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                               Dropdown
                             </a>
@@ -44,35 +51,200 @@
                               <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                           </li> -->
-                          <li class="nav-item">
-                            <a class="nav-link" href="volunteer.html">Volunteer</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link active" href="orgs.html">Organizations</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="stories.html">Stories</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="subscribe.html">Subscribe</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
-                          </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                      </div>
-                    </div>
-                  </nav>
-                </div>
+                  <li class="nav-item">
+                    <a class="nav-link" href="volunteer.html">Volunteer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="orgs.html">Organizations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="stories.html">Stories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="subscribe.html">Subscribe</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
             </div>
+          </nav>
         </div>
-    </header>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="slide-container swiper">
+      <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/unicef_logo.png" alt="image1" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Unicef Philippines</h2>
+              <p class="description">This is an agency of the United Nations that aims to serve children.</p>
+              <p class="description">UNICEF Philippines implements different programs that cover nutrition, education,
+                disaster risk
+                reduction and emergencies, child protection, communication, HIV and AIDS prevention, and institutional
+                development.</p>
+              <button class="button">Learn More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/worldvision_logo.jpg" alt="image2" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">World Vision Philippines</h2>
+              <p class="description">This is the Philippine arm of World Vision, which is the largest international
+                children’s charity in the world.</p>
+              <p class="description">World Vision Philippines has been present in the country for close to six decades
+                and they aim to bring
+                hope to thousands of children in rural and urban poor areas.</p>
+              <button class="button">Learn More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/greenearth_logo.jpg" alt="image3" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Green Earth Heritage</h2>
+              <p class="description">GreenEarth Heritage Foundation is a Christian humanitarian organization that
+                addresses the holistic needs of underprivileged communities.</p>
+              <p class="description">It covers a wide array of initiatives for social change such as sustainable
+                livelihood in organic
+                farming, educational initiatives, reforestation programs, and many more. </p>
+              <button class="button">Learn More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/haribon_logo.png" alt="image4" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Haribon Foundation</h2>
+              <p class="description">This foundation supports the conservation of natural resources. It is committed to
+                nature conservation through scientific excellence and community empowerment.</p>
+              <button class="button">Learn More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/pawssion_logo.png" alt="image5" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Pawssion Project</h2>
+              <p class="description">Pawssion project first started in Bacolod. After receiving tons of support from
+                kind-hearted individuals, it opened a second shelter in Bulacan.</p>
+              <p class="description">Now, there have rescued more than 1,000 animals that have suffered from injury, neglect, abuse, and
+                abandonment.</p>
+              <button class="button">Learn More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/houndhaven_logo.png" alt="image6" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Hound Haven Philippines</h2>
+              <p class="description">This is a non-profit organization that advocates for Contract Working Dogs or CWDs
+                and Military Working Dogs or MWDs. They match these retired army dogs with new loving families. </p>
+              <button class="button">Learn More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/gawadkalinga_logo.jpg" alt="image7" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Gawad Kalinga</h2>
+              <p class="description">You can volunteer in Gawad Kalinga if you want to help implement projects that aim
+                to end poverty in the country. </p>
+              <button class="button">Learn More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/ivolunteer_logo.png" alt="image8" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">iVolunteer</h2>
+              <p class="description">This project can connect you to organizations that seek volunteers.</p>
+              <button class="button">Learn More</button>
+            </div>
+          </div>
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>
+
+              <div class="card-image">
+                <img src="media/dreambig_logo.jpg" alt="image9" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name">Dream Big Pilipinas</h2>
+              <p class="description">Dream Big Pilipinas uses a multipronged approach to keep underprivileged kids off
+                the streets. One of the major initiatives of this organization is to teach young girls and boys
+                literacy.</p>
+              <p class="description">It also helps to fight child labor as well as raise funds for scholarships. Dream
+                Big Pilipinas also
+                teaches kids football to instill a sense of discipline and purpose in them.</p>
+              <button class="button">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-navBtn"></div>
+      <div class="swiper-button-prev swiper-navBtn"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
 </body>
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+<!-- Javascript -->
+<script src="js/script.js"></script>
+
 </html>
