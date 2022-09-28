@@ -1,34 +1,279 @@
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: Montserrat, sans-serif, serif;
 }
-li > a:hover {
-    background-color: #483838;
-    color: white!important;
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 80vh 10vh;
 }
-li > a.active {
-    background-color: #483838;
-    color: white!important;
-}
-li > a {
-    color: black!important;
-}
-.header_navigation {
-    background: #90B77D;
-}
-.navbar-nav {
-    background-color: #90B77D;
-    position: static;
-}
-.navbar {
+aside {
+    grid-area: header;
+    display: grid;
+    grid-template-areas: 
+    "logo navigation";
+    grid-template-columns: 25vw 75vw;
+    grid-template-rows: 10vh;
     background-color: #483838;
 }
-header {
-    border: 1px solid black;
+.logo {
+    grid-area: logo;
 }
-li > a {
-    color: black!important;
+.logo img {
+    width: 25vw;
+    height: 10vh;
 }
-.btn {
-    background-color: #D2D79F;
+nav {
+    grid-area: navigation;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    z-index: 1; 
+}
+.nav_link {
+    position: relative;
+    background-color: #42855B;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 75vw;
+    padding: 10px;
+}
+.navigation_a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.nav_link:hover {
+    background-color: #483838;
+}
+.navigation_a:hover {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.navbar-toggler {
+    color: white;
+    display: flex;
+    float: right;
+    margin-left: 85% !important;
+}
+/* main content */
+
+/* end of main content */
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: 
+    "links logo";
+    grid-template-columns: 80vw 20vw;
+    grid-template-rows: 10vh;
+    background-color: #483838;
+    font-size: 10px;
+}
+.links {
+    grid-area: links;
+    grid-template-areas: 
+    "llink"
+    "rlink";
+    grid-template-rows: 5vh 5vh;
+    grid-template-columns: 80vw;
+
+}
+.left_link {
+    grid-area: llink;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.right_link {
+    grid-area: rlink;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    column-gap: 20px;
+}
+.footer_logo {
+    grid-area: logo;
+}
+.footer_logo img {
+    width: 20vw;
+    height: 10vh;
+}
+.footer_link:link {
+    text-decoration: none;
+    color: white;
+}
+.footer_link:visited {
+    text-decoration: none;
+    color: white;
+}
+.carousel-caption {
+    background-color: #483838;
+    border-radius: 25px;
+    opacity: 0.9;
+}
+.button-link {
+    background-color: #42855B;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+.button-link a:link {
+    text-decoration: none;
+    color: white;
+}
+.button-link a:visited {
+    text-decoration: none;
+    color: white;
+}
+.button-link a:hover {
+    text-decoration: none;
     color: black;
 }
+.button-link:hover {
+    background-color: #D2D79F;
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: 100vw;
+        grid-template-rows: 10vh 80vh 10vh;
+        background-color: white;
+    }
+    aside {
+        grid-area: header;
+        display: grid;
+        grid-template-areas: 
+        "logo navigation";
+        grid-template-columns: 25vw 75vw;
+        grid-template-rows: 10vh;
+        background-color: #483838;
+    }
+    /* main */
+   
+    /* end main */
+    nav {
+        grid-area: navigation;
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        margin-left: 2vw;
+        font-size: 13px;
+    }
+    .nav_link {
+        position: relative;
+        background-color: #42855B;
+        display: grid;
+        grid-template-rows: 1fr;
+        width: auto;
+        padding: 10px;
+    }
+    .active {
+        background-color: #483838;
+    }
+    footer {
+        grid-area: footer;
+        border: 1px solid white;
+        border-left: none;
+        display: grid;
+        grid-template-areas: 
+        "links logo";
+        grid-template-columns: 80vw 20vw;
+        grid-template-rows: 10vh;
+        font-size: 15px;
+    }
+    .links {
+        grid-area: links;
+        display: grid;
+        grid-template-areas: 
+        "llink rlink";
+        grid-template-columns: 60vw 20vw;
+        grid-template-rows: 10vh;
+    }
+    .right_link {
+        font-size: 30px;
+    }
+    .footer_logo {
+        grid-area: logo;
+    }
+}  
+@media only screen and (min-width: 1025px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: 100vw;
+        grid-template-rows: 10vh 80vh 10vh;
+        background-color: white;
+    }
+    aside {
+        grid-area: header;
+        display: grid;
+        grid-template-areas: 
+        "logo navigation";
+        grid-template-columns: 25vw 75vw;
+        grid-template-rows: 10vh;
+        background-color: #483838;
+    }
+    /* main */
+    
+    /* end main */
+    nav {
+        grid-area: navigation;
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        margin-left: 2vw;
+    }
+    .nav_link {
+        position: relative;
+        background-color: #42855B;
+        display: grid;
+        grid-template-rows: 1fr;
+        width: auto;
+        padding: 10px;
+    }
+    .active {
+        background-color: #483838;
+    }
+    footer {
+        grid-area: footer;
+        border: 1px solid white;
+        border-left: none;
+        display: grid;
+        grid-template-areas: 
+        "links logo";
+        grid-template-columns: 80vw 20vw;
+        grid-template-rows: 10vh;
+        font-size: 15px;
+    }
+    .links {
+        grid-area: links;
+        display: grid;
+        grid-template-areas: 
+        "llink rlink";
+        grid-template-columns: 60vw 20vw;
+        grid-template-rows: 10vh;
+    }
+    .right_link {
+        font-size: 30px;
+    }
+    .footer_logo {
+        grid-area: logo;
+    }
+}  
