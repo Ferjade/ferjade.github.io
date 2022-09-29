@@ -140,6 +140,8 @@ textarea {
 .submit_button:hover {
     background-color: #42855B;
     color: white;
+}label {
+    margin-left: 1vh;
 }
 /* end of main content */
 footer {
