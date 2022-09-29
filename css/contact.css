@@ -12,6 +12,7 @@ body {
     "footer";
     grid-template-columns: 100vw;
     grid-template-rows: 10vh 80vh 10vh;
+    background-color: #D2D79F;
 }
 aside {
     grid-area: header;
@@ -64,7 +65,82 @@ nav {
     margin-left: 85% !important;
 }
 /* main content */
+main {
+    grid-area: main;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/media/main1.jpg);
+    background-size: 100%;
+}
+.card {
+    width: 60vw;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    background-color: #483838;
+    opacity: 0.9;
+}
+.card-heading {
+    text-align: center;
+}
+.wrapper {
+    margin: 10px;
+    background-color: #D2D79F;
+    border-radius: 25px;
+}
+.card-heading {
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+    opacity: 1;
+}
+#name {
+    display: block;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: #D2D79F;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
 
+#email {
+    display: block;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: #D2D79F;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+#answer {
+    display: block;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: #D2D79F;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+textarea {
+    resize: none;
+}
+.submit_button {
+    display: block;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    padding: 1vh 4vh;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #483838;
+    color: white;
+}
+.submit_button:hover {
+    background-color: #42855B;
+    color: white;
+}
 /* end of main content */
 footer {
     grid-area: footer;
@@ -151,7 +227,7 @@ footer {
         "footer";
         grid-template-columns: 100vw;
         grid-template-rows: 10vh 80vh 10vh;
-        background-color: white;
+        background-color: #D2D79F;
     }
     aside {
         grid-area: header;
@@ -163,7 +239,7 @@ footer {
         background-color: #483838;
     }
     /* main */
-   
+     
     /* end main */
     nav {
         grid-area: navigation;
@@ -219,7 +295,7 @@ footer {
         "footer";
         grid-template-columns: 100vw;
         grid-template-rows: 10vh 80vh 10vh;
-        background-color: white;
+        background-color: #D2D79F;
     }
     aside {
         grid-area: header;
@@ -231,7 +307,9 @@ footer {
         background-color: #483838;
     }
     /* main */
-    
+    .card {
+        margin-top: 7vh;  
+    }
     /* end main */
     nav {
         grid-area: navigation;
